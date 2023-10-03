@@ -1,0 +1,66 @@
+/* Estilos para o tabuleiro do jogo da velha */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 2px;
+    margin: 0 auto;
+    width: 306px;
+    height: 306px;
+  }
+  
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #999;
+  }
+  
+  .piece {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .piece-x {
+    color: #f00; /* Cor para "X" */
+  }
+  
+  .piece-o {
+    color: #00f; /* Cor para "O" */
+  }
+  
+  .square:hover {
+    background-color: #eee;
+  }
+  
+  /* Estilos para a mensagem de status e o botão de reinício */
+  
+  .status {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
